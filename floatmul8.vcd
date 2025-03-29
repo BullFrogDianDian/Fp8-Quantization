@@ -1,0 +1,280 @@
+$date
+	Sat Mar 29 20:47:54 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module FloatMul8_tb $end
+$var wire 8 ! io_c [7:0] $end
+$var reg 1 " clock $end
+$var reg 8 # io_a [7:0] $end
+$var reg 8 $ io_b [7:0] $end
+$var reg 1 % reset $end
+$scope module dut $end
+$var wire 1 " clock $end
+$var wire 8 & io_a [7:0] $end
+$var wire 8 ' io_b [7:0] $end
+$var wire 1 ( res_sign $end
+$var wire 1 % reset $end
+$var wire 6 ) res_exp [5:0] $end
+$var wire 1 * normalize $end
+$var wire 3 + norm_mant [2:0] $end
+$var wire 8 , mant_product [7:0] $end
+$var wire 8 - io_c [7:0] $end
+$var wire 5 . exp_sum [4:0] $end
+$var wire 1 / b_zero $end
+$var wire 1 0 b_sign $end
+$var wire 4 1 b_mant_full [3:0] $end
+$var wire 3 2 b_mant [2:0] $end
+$var wire 1 3 b_inf $end
+$var wire 4 4 b_exp [3:0] $end
+$var wire 1 5 a_zero $end
+$var wire 1 6 a_sign $end
+$var wire 4 7 a_mant_full [3:0] $end
+$var wire 3 8 a_mant [2:0] $end
+$var wire 1 9 a_inf $end
+$var wire 4 : a_exp [3:0] $end
+$var wire 8 ; _result_T_5 [7:0] $end
+$var wire 8 < _result_T_1 [7:0] $end
+$var wire 8 = _result_T [7:0] $end
+$var wire 6 > _res_exp_T [5:0] $end
+$var wire 6 ? _GEN_4 [5:0] $end
+$var wire 8 @ _GEN_2 [7:0] $end
+$var wire 8 A _GEN_1 [7:0] $end
+$var wire 8 B _GEN_0 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 B
+b1111000 A
+b1111000 @
+b0 ?
+b111001 >
+b0 =
+b1111000 <
+b1001000 ;
+b0 :
+09
+b0 8
+b1000 7
+06
+15
+b0 4
+03
+b0 2
+b1000 1
+00
+1/
+b0 .
+b0 -
+b1000000 ,
+b0 +
+0*
+b111001 )
+0(
+b0 '
+b0 &
+1%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#5000
+1"
+#10000
+0"
+#15000
+1"
+#20000
+0"
+0%
+#25000
+1"
+#30000
+b11010 B
+b11010 @
+b11010 !
+b11010 -
+b10 +
+b11010 A
+b11010 ;
+0/
+b110 4
+b11 )
+b11 >
+b1010 .
+05
+b100 :
+b1010000 ,
+b1010 7
+b10 8
+0"
+b110000 $
+b110000 '
+b100010 #
+b100010 &
+#35000
+1"
+#40000
+0"
+#45000
+1"
+#50000
+b10001100 !
+b10001100 -
+b10001100 @
+b10001100 A
+b10001100 B
+b100 +
+b10000000 =
+b11111000 <
+1(
+b10001100 ;
+16
+b1 )
+b1 >
+b1000 .
+b10 :
+b1100000 ,
+b1100 7
+b100 8
+0"
+b10010100 #
+b10010100 &
+#55000
+1"
+#60000
+0"
+#65000
+1"
+#70000
+b0 B
+b1111000 @
+b0 !
+b0 -
+b10 +
+b0 =
+b1111000 <
+0(
+b1110010 ;
+b1111000 A
+b101 4
+b1010 1
+b10 2
+06
+b111110 )
+b111110 >
+b101 .
+15
+b0 :
+b1010000 ,
+b1000 7
+b0 8
+0"
+b101010 $
+b101010 '
+b0 #
+b0 &
+#75000
+1"
+#80000
+0"
+#85000
+1"
+#90000
+b1101000 B
+b0 +
+b1111000 !
+b1111000 -
+b1101000 ;
+b1101000 A
+b1000000 ,
+b1000 1
+b0 2
+b1101 )
+b1101 >
+b10100 .
+05
+19
+b1111 :
+0"
+b101000 $
+b101000 '
+b1111000 #
+b1111000 &
+#95000
+1"
+#100000
+0"
+#105000
+1"
+#110000
+b1000 A
+b1000 !
+b1000 -
+b1000 B
+b1000 @
+b1000 ;
+b100 4
+b1 )
+b1 >
+b1000 .
+09
+b100 :
+0"
+b100000 $
+b100000 '
+b100000 #
+b100000 &
+#115000
+1"
+#120000
+0"
+#125000
+1"
+#130000
+b1111000 !
+b1111000 -
+b1111000 @
+b0 B
+b110 +
+b1111000 A
+b1 ?
+1*
+b110110 ;
+b1110 4
+b1111 1
+b111 2
+b10110 )
+b10101 >
+b11100 .
+b1110 :
+b11100001 ,
+b1111 7
+b111 8
+0"
+b1110111 $
+b1110111 '
+b1110111 #
+b1110111 &
+#135000
+1"
+#140000
+0"
+#145000
+1"
+#150000
+0"
+#155000
+1"
+#160000
+0"

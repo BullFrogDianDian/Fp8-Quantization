@@ -1,0 +1,61 @@
+FIRRTL version 1.2.0
+circuit FloatMul8 :
+  module FloatMul8 :
+    input clock : Clock
+    input reset : UInt<1>
+    output io : { flip a : UInt<8>, flip b : UInt<8>, c : UInt<8>} @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 7:16]
+
+    node a_sign = bits(io.a, 7, 7) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 20:22]
+    node a_exp = bits(io.a, 6, 3) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 21:21]
+    node a_mant = bits(io.a, 2, 0) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 22:22]
+    node b_sign = bits(io.b, 7, 7) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 24:22]
+    node b_exp = bits(io.b, 6, 3) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 25:21]
+    node b_mant = bits(io.b, 2, 0) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 26:22]
+    node res_sign = xor(a_sign, b_sign) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 29:27]
+    node a_mant_full = cat(UInt<1>("h1"), a_mant) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 32:26]
+    node b_mant_full = cat(UInt<1>("h1"), b_mant) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 33:26]
+    node mant_product = mul(a_mant_full, b_mant_full) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 36:36]
+    node normalize = bits(mant_product, 7, 7) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 39:33]
+    node _norm_mant_T = bits(mant_product, 6, 4) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 40:48]
+    node _norm_mant_T_1 = bits(mant_product, 5, 3) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 40:68]
+    node norm_mant = mux(normalize, _norm_mant_T, _norm_mant_T_1) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 40:24]
+    node exp_sum = add(a_exp, b_exp) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 43:25]
+    node _res_exp_T = sub(exp_sum, UInt<3>("h7")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 44:27]
+    node _res_exp_T_1 = asUInt(_res_exp_T) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 44:27]
+    node _res_exp_T_2 = add(_res_exp_T_1, normalize) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 44:34]
+    node res_exp = tail(_res_exp_T_2, 1) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 44:34]
+    node a_zero = eq(a_exp, UInt<1>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 47:24]
+    node b_zero = eq(b_exp, UInt<1>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 48:24]
+    node a_inf = eq(a_exp, UInt<4>("hf")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 49:23]
+    node b_inf = eq(b_exp, UInt<4>("hf")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 50:23]
+    wire result : UInt<8> @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 53:22]
+    node _T = or(a_zero, b_zero) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 55:17]
+    when _T : @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 55:28]
+      node _result_T = cat(res_sign, UInt<7>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 57:22]
+      result <= _result_T @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 57:16]
+    else :
+      node _T_1 = or(a_inf, b_inf) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 58:22]
+      when _T_1 : @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 58:32]
+        node result_hi = cat(res_sign, UInt<4>("hf")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 60:22]
+        node _result_T_1 = cat(result_hi, UInt<3>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 60:22]
+        result <= _result_T_1 @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 60:16]
+      else :
+        node _T_2 = geq(res_exp, UInt<4>("hf")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 61:24]
+        when _T_2 : @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 61:33]
+          node result_hi_1 = cat(res_sign, UInt<4>("hf")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 63:22]
+          node _result_T_2 = cat(result_hi_1, UInt<3>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 63:22]
+          result <= _result_T_2 @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 63:16]
+        else :
+          node _T_3 = eq(res_exp, UInt<1>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 64:24]
+          node _T_4 = bits(res_exp, 4, 4) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 64:42]
+          node _T_5 = or(_T_3, _T_4) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 64:32]
+          when _T_5 : @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 64:47]
+            node _result_T_3 = cat(res_sign, UInt<7>("h0")) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 66:22]
+            result <= _result_T_3 @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 66:16]
+          else :
+            node _result_T_4 = bits(res_exp, 3, 0) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 69:40]
+            node result_hi_2 = cat(res_sign, _result_T_4) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 69:22]
+            node _result_T_5 = cat(result_hi_2, norm_mant) @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 69:22]
+            result <= _result_T_5 @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 69:16]
+    io.c <= result @[Users/apple/Desktop/floatedpoint8-1/src/main/scala/Multiple/FloatMul8.scala 72:10]
+
