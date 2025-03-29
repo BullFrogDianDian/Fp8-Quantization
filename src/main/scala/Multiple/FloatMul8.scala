@@ -15,8 +15,6 @@ class FloatMul8 extends Module {
     // 2.0 = 0_0011_000 (1.0 * 2^1)
     // 5.0 = 0_0101_010 (1.25 * 2^2)
 
-    // Extract sign, exponent and mantissa for inputs
-    // FP8 format: 1-bit sign, 4-bit exponent, 3-bit mantissa
     val a_sign = io.a(7)
     val a_exp = io.a(6, 3)
     val a_mant = io.a(2, 0)
@@ -25,21 +23,15 @@ class FloatMul8 extends Module {
     val b_exp = io.b(6, 3)
     val b_mant = io.b(2, 0)
     
-    // Calculate result sign (XOR of input signs)
     val res_sign = a_sign ^ b_sign
     
-    // Add implied '1' to mantissas
     val a_mant_full = Cat(1.U(1.W), a_mant)
     val b_mant_full = Cat(1.U(1.W), b_mant)
-    
-    // Multiply mantissas (4-bit * 4-bit = 8-bit result)
     val mant_product = a_mant_full * b_mant_full
     
-    // Determine normalization (check if highest bit is set)
     val normalize = mant_product(7)
     val norm_mant = Mux(normalize, mant_product(6, 4), mant_product(5, 3))
     
-    // Calculate exponent with bias 7 (typical for FP8)
     val exp_sum = a_exp +& b_exp
     val res_exp = exp_sum -& 7.U + normalize
     
@@ -65,7 +57,6 @@ class FloatMul8 extends Module {
         // Underflow to zero
         result := Cat(res_sign, 0.U(7.W))
     }.otherwise {
-        // Normal case
         result := Cat(res_sign, res_exp(3, 0), norm_mant)
     }
     

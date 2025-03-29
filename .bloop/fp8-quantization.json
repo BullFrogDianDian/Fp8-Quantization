@@ -1,0 +1,1424 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "fp8-quantization",
+        "directory": "/Users/apple/Desktop/Fp8-Quantization",
+        "workspaceDir": "/Users/apple/Desktop/Fp8-Quantization",
+        "sources": [
+            "/Users/apple/Desktop/Fp8-Quantization/src/main/scala",
+            "/Users/apple/Desktop/Fp8-Quantization/src/main/scala-2.12",
+            "/Users/apple/Desktop/Fp8-Quantization/src/main/scala-2",
+            "/Users/apple/Desktop/Fp8-Quantization/src/main/java",
+            "/Users/apple/Desktop/Fp8-Quantization/target/scala-2.12/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3_2.12/3.6-SNAPSHOT/chisel3_2.12-3.6-SNAPSHOT.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/treadle_2.12/1.6-SNAPSHOT/treadle_2.12-1.6-SNAPSHOT.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.2.12/scalatest_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.8.0/utest_2.12-0.8.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.16/scala-reflect-2.12.16.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.12/0.14.1/circe-core_2.12-0.14.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.14.1/circe-generic_2.12-0.14.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.12/0.14.1/circe-parser_2.12-0.14.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-macros_2.12/3.6-SNAPSHOT/chisel3-macros_2.12-3.6-SNAPSHOT.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-core_2.12/3.6-SNAPSHOT/chisel3-core_2.12-3.6-SNAPSHOT.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_2.12/2.0.0/upickle_2.12-2.0.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/firrtl_2.12/1.6-SNAPSHOT/firrtl_2.12-1.6-SNAPSHOT.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.12/3.2.12/scalatest-core_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.12/3.2.12/scalatest-featurespec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.12/3.2.12/scalatest-flatspec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.12/3.2.12/scalatest-freespec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.12/3.2.12/scalatest-funsuite_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.12/3.2.12/scalatest-funspec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.12/3.2.12/scalatest-propspec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.12/3.2.12/scalatest-refspec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.12/3.2.12/scalatest-wordspec_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.12/3.2.12/scalatest-diagrams_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.12/3.2.12/scalatest-matchers-core_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.12/3.2.12/scalatest-shouldmatchers_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.12/3.2.12/scalatest-mustmatchers_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/1.1.2/portable-scala-reflect_2.12-1.1.2.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.14.1/circe-numbers_2.12-0.14.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.6.1/cats-core_2.12-2.6.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.7/shapeless_2.12-2.3.7.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.14.1/circe-jawn_2.12-0.14.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_2.12/0.8.1/os-lib_2.12-0.8.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.12/2.0.0/ujson_2.12-2.0.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_2.12/2.0.0/upack_2.12-2.0.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_2.12/2.0.0/upickle-implicits_2.12-2.0.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.18.3/protobuf-java-3.18.3.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/4.0.6/json4s-native_2.12-4.0.6.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/data-class_2.12/0.2.5/data-class_2.12-0.2.5.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.12/scalatest-compatible-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.2.12/scalactic_2.12-3.2.12.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.6.1/cats-kernel_2.12-2.6.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.12/0.5.4/simulacrum-scalafix-annotations_2.12-0.5.4.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.12/1.1.2/jawn-parser_2.12-1.1.2.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.7.1/geny_2.12-0.7.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.12/2.0.0/upickle-core_2.12-2.0.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/4.0.6/json4s-core_2.12-4.0.6.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_2.12/4.0.6/json4s-native-core_2.12-4.0.6.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/4.0.6/json4s-ast_2.12-4.0.6.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/4.0.6/json4s-scalap_2.12-4.0.6.jar",
+            "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+        ],
+        "out": "/Users/apple/Desktop/Fp8-Quantization/.bloop/fp8-quantization",
+        "classesDir": "/Users/apple/Desktop/Fp8-Quantization/.bloop/fp8-quantization/scala-2.12/classes",
+        "resources": [
+            "/Users/apple/Desktop/Fp8-Quantization/src/main/resources",
+            "/Users/apple/Desktop/Fp8-Quantization/target/scala-2.12/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.16",
+            "options": [
+                "-language:reflectiveCalls",
+                "-deprecation",
+                "-feature",
+                "-Xcheckinit",
+                "-Xplugin:/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-plugin_2.12.16/3.6-SNAPSHOT/chisel3-plugin_2.12.16-3.6-SNAPSHOT.jar",
+                "-Xplugin:/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalamacros/paradise_2.12.16/2.1.1/paradise_2.12.16-2.1.1.jar"
+            ],
+            "jars": [
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.16/scala-compiler-2.12.16.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.16/scala-reflect-2.12.16.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/opt/homebrew/Cellar/openjdk@17/17.0.14/libexec/openjdk.jdk/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/apple/Desktop/Fp8-Quantization"
+                ]
+            },
+            "mainClass": [
+                
+            ],
+            "runtimeConfig": {
+                "home": "/opt/homebrew/Cellar/openjdk@17/17.0.14/libexec/openjdk.jdk/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/apple/Desktop/Fp8-Quantization"
+                ]
+            },
+            "classpath": [
+                "/Users/apple/Desktop/Fp8-Quantization/.bloop/fp8-quantization/scala-2.12/classes",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3_2.12/3.6-SNAPSHOT/chisel3_2.12-3.6-SNAPSHOT.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/treadle_2.12/1.6-SNAPSHOT/treadle_2.12-1.6-SNAPSHOT.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.2.12/scalatest_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.8.0/utest_2.12-0.8.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.16/scala-reflect-2.12.16.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.12/0.14.1/circe-core_2.12-0.14.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.14.1/circe-generic_2.12-0.14.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.12/0.14.1/circe-parser_2.12-0.14.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-macros_2.12/3.6-SNAPSHOT/chisel3-macros_2.12-3.6-SNAPSHOT.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-core_2.12/3.6-SNAPSHOT/chisel3-core_2.12-3.6-SNAPSHOT.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_2.12/2.0.0/upickle_2.12-2.0.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/firrtl_2.12/1.6-SNAPSHOT/firrtl_2.12-1.6-SNAPSHOT.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.12/3.2.12/scalatest-core_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.12/3.2.12/scalatest-featurespec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.12/3.2.12/scalatest-flatspec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.12/3.2.12/scalatest-freespec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.12/3.2.12/scalatest-funsuite_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.12/3.2.12/scalatest-funspec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.12/3.2.12/scalatest-propspec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.12/3.2.12/scalatest-refspec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.12/3.2.12/scalatest-wordspec_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.12/3.2.12/scalatest-diagrams_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.12/3.2.12/scalatest-matchers-core_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.12/3.2.12/scalatest-shouldmatchers_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.12/3.2.12/scalatest-mustmatchers_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/1.1.2/portable-scala-reflect_2.12-1.1.2.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.14.1/circe-numbers_2.12-0.14.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.6.1/cats-core_2.12-2.6.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.7/shapeless_2.12-2.3.7.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.14.1/circe-jawn_2.12-0.14.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_2.12/0.8.1/os-lib_2.12-0.8.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.12/2.0.0/ujson_2.12-2.0.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_2.12/2.0.0/upack_2.12-2.0.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_2.12/2.0.0/upickle-implicits_2.12-2.0.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.18.3/protobuf-java-3.18.3.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/4.0.6/json4s-native_2.12-4.0.6.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/data-class_2.12/0.2.5/data-class_2.12-0.2.5.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.12/scalatest-compatible-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.2.12/scalactic_2.12-3.2.12.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.6.1/cats-kernel_2.12-2.6.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.12/0.5.4/simulacrum-scalafix-annotations_2.12-0.5.4.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.12/1.1.2/jawn-parser_2.12-1.1.2.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.7.1/geny_2.12-0.7.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.12/2.0.0/upickle-core_2.12-2.0.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/4.0.6/json4s-core_2.12-4.0.6.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_2.12/4.0.6/json4s-native-core_2.12-4.0.6.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/4.0.6/json4s-ast_2.12-4.0.6.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/4.0.6/json4s-scalap_2.12-4.0.6.jar",
+                "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "edu.berkeley.cs",
+                    "name": "chisel3_2.12",
+                    "version": "3.6-SNAPSHOT",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "chisel3_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "60a1e5265c76720b4bb3ace1fac63e7b09906bd1"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3_2.12/3.6-SNAPSHOT/chisel3_2.12-3.6-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "chisel3_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "52de9741ae5845a675331975d7a30ac339c314ce"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3_2.12/3.6-SNAPSHOT/chisel3_2.12-3.6-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "edu.berkeley.cs",
+                    "name": "treadle_2.12",
+                    "version": "1.6-SNAPSHOT",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "treadle_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "0defb9b48f0f83d804c44209dfd5f7bb8511228a"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/treadle_2.12/1.6-SNAPSHOT/treadle_2.12-1.6-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "treadle_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "85d9dc5979ea794c776cec8679a5eeafc71ad655"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/treadle_2.12/1.6-SNAPSHOT/treadle_2.12-1.6-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.2.12/scalatest_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.2.12/scalatest_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "utest_2.12",
+                    "version": "0.8.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "utest_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.8.0/utest_2.12-0.8.0.jar"
+                        },
+                        {
+                            "name": "utest_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.8.0/utest_2.12-0.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.java.dev.jna",
+                    "name": "jna",
+                    "version": "5.12.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jna",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar"
+                        },
+                        {
+                            "name": "jna",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.12.1/jna-5.12.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.16/scala-reflect-2.12.16.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.16/scala-reflect-2.12.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-core_2.12",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.12/0.14.1/circe-core_2.12-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.12/0.14.1/circe-core_2.12-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-generic_2.12",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-generic_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.14.1/circe-generic_2.12-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-generic_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.14.1/circe-generic_2.12-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-parser_2.12",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-parser_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.12/0.14.1/circe-parser_2.12-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-parser_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-parser_2.12/0.14.1/circe-parser_2.12-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "edu.berkeley.cs",
+                    "name": "chisel3-macros_2.12",
+                    "version": "3.6-SNAPSHOT",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "chisel3-macros_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "95067a5f1bf896839093fe7895489fa717dd32e1"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-macros_2.12/3.6-SNAPSHOT/chisel3-macros_2.12-3.6-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "chisel3-macros_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5172ada25ccf06c30c9f81a77d0aa69b964b5a05"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-macros_2.12/3.6-SNAPSHOT/chisel3-macros_2.12-3.6-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "edu.berkeley.cs",
+                    "name": "chisel3-core_2.12",
+                    "version": "3.6-SNAPSHOT",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "chisel3-core_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ae7e1701cea02559ea8b8c87d2ed0d95c4e863f6"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-core_2.12/3.6-SNAPSHOT/chisel3-core_2.12-3.6-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "chisel3-core_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "684446893ce51c7bc4bbd28cdb46470078c1a947"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/chisel3-core_2.12/3.6-SNAPSHOT/chisel3-core_2.12-3.6-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upickle_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upickle_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_2.12/2.0.0/upickle_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "upickle_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle_2.12/2.0.0/upickle_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "edu.berkeley.cs",
+                    "name": "firrtl_2.12",
+                    "version": "1.6-SNAPSHOT",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "firrtl_2.12",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "733838462bb7862f73140b680714aed07a0b639c"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/firrtl_2.12/1.6-SNAPSHOT/firrtl_2.12-1.6-SNAPSHOT.jar"
+                        },
+                        {
+                            "name": "firrtl_2.12",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e0d596143cfe33084f90fd09db88c18932e494b7"
+                            },
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/oss.sonatype.org/content/repositories/snapshots/edu/berkeley/cs/firrtl_2.12/1.6-SNAPSHOT/firrtl_2.12-1.6-SNAPSHOT-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-jline",
+                    "version": "2.12.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-jline",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1.jar"
+                        },
+                        {
+                            "name": "scala-jline",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.12/3.2.12/scalatest-core_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.12/3.2.12/scalatest-core_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.12/3.2.12/scalatest-featurespec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.12/3.2.12/scalatest-featurespec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.12/3.2.12/scalatest-flatspec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.12/3.2.12/scalatest-flatspec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.12/3.2.12/scalatest-freespec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.12/3.2.12/scalatest-freespec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.12/3.2.12/scalatest-funsuite_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.12/3.2.12/scalatest-funsuite_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.12/3.2.12/scalatest-funspec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.12/3.2.12/scalatest-funspec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.12/3.2.12/scalatest-propspec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.12/3.2.12/scalatest-propspec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.12/3.2.12/scalatest-refspec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.12/3.2.12/scalatest-refspec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.12/3.2.12/scalatest-wordspec_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.12/3.2.12/scalatest-wordspec_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.12/3.2.12/scalatest-diagrams_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.12/3.2.12/scalatest-diagrams_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.12/3.2.12/scalatest-matchers-core_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.12/3.2.12/scalatest-matchers-core_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.12/3.2.12/scalatest-shouldmatchers_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.12/3.2.12/scalatest-shouldmatchers_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.12/3.2.12/scalatest-mustmatchers_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.12/3.2.12/scalatest-mustmatchers_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "test-interface",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "test-interface",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
+                        },
+                        {
+                            "name": "test-interface",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.portable-scala",
+                    "name": "portable-scala-reflect_2.12",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "portable-scala-reflect_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/1.1.2/portable-scala-reflect_2.12-1.1.2.jar"
+                        },
+                        {
+                            "name": "portable-scala-reflect_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/1.1.2/portable-scala-reflect_2.12-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-numbers_2.12",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-numbers_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.14.1/circe-numbers_2.12-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-numbers_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.14.1/circe-numbers_2.12-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-core_2.12",
+                    "version": "2.6.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.6.1/cats-core_2.12-2.6.1.jar"
+                        },
+                        {
+                            "name": "cats-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.12/2.6.1/cats-core_2.12-2.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.chuusai",
+                    "name": "shapeless_2.12",
+                    "version": "2.3.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shapeless_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.7/shapeless_2.12-2.3.7.jar"
+                        },
+                        {
+                            "name": "shapeless_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/chuusai/shapeless_2.12/2.3.7/shapeless_2.12-2.3.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.circe",
+                    "name": "circe-jawn_2.12",
+                    "version": "0.14.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-jawn_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.14.1/circe-jawn_2.12-0.14.1.jar"
+                        },
+                        {
+                            "name": "circe-jawn_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.14.1/circe-jawn_2.12-0.14.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "os-lib_2.12",
+                    "version": "0.8.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "os-lib_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_2.12/0.8.1/os-lib_2.12-0.8.1.jar"
+                        },
+                        {
+                            "name": "os-lib_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/os-lib_2.12/0.8.1/os-lib_2.12-0.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "ujson_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ujson_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.12/2.0.0/ujson_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "ujson_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.12/2.0.0/ujson_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upack_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upack_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_2.12/2.0.0/upack_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "upack_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upack_2.12/2.0.0/upack_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upickle-implicits_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upickle-implicits_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_2.12/2.0.0/upickle-implicits_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "upickle-implicits_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-implicits_2.12/2.0.0/upickle-implicits_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.antlr",
+                    "name": "antlr4-runtime",
+                    "version": "4.9.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "antlr4-runtime",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar"
+                        },
+                        {
+                            "name": "antlr4-runtime",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.protobuf",
+                    "name": "protobuf-java",
+                    "version": "3.18.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "protobuf-java",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.18.3/protobuf-java-3.18.3.jar"
+                        },
+                        {
+                            "name": "protobuf-java",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.18.3/protobuf-java-3.18.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.scopt",
+                    "name": "scopt_2.12",
+                    "version": "3.7.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scopt_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1.jar"
+                        },
+                        {
+                            "name": "scopt_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.jcazevedo",
+                    "name": "moultingyaml_2.12",
+                    "version": "0.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "moultingyaml_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2.jar"
+                        },
+                        {
+                            "name": "moultingyaml_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-native_2.12",
+                    "version": "4.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json4s-native_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/4.0.6/json4s-native_2.12-4.0.6.jar"
+                        },
+                        {
+                            "name": "json4s-native_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/4.0.6/json4s-native_2.12-4.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-text",
+                    "version": "1.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-text",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar"
+                        },
+                        {
+                            "name": "commons-text",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.github.alexarchambault",
+                    "name": "data-class_2.12",
+                    "version": "0.2.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "data-class_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/data-class_2.12/0.2.5/data-class_2.12-0.2.5.jar"
+                        },
+                        {
+                            "name": "data-class_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/github/alexarchambault/data-class_2.12/0.2.5/data-class_2.12-0.2.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.fusesource.jansi",
+                    "name": "jansi",
+                    "version": "1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jansi",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar"
+                        },
+                        {
+                            "name": "jansi",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.12/scalatest-compatible-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.12/scalatest-compatible-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.12",
+                    "version": "3.2.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.2.12/scalactic_2.12-3.2.12.jar"
+                        },
+                        {
+                            "name": "scalactic_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.2.12/scalactic_2.12-3.2.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/2.1.0/scala-xml_2.12-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-kernel_2.12",
+                    "version": "2.6.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-kernel_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.6.1/cats-kernel_2.12-2.6.1.jar"
+                        },
+                        {
+                            "name": "cats-kernel_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/2.6.1/cats-kernel_2.12-2.6.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "simulacrum-scalafix-annotations_2.12",
+                    "version": "0.5.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "simulacrum-scalafix-annotations_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.12/0.5.4/simulacrum-scalafix-annotations_2.12-0.5.4.jar"
+                        },
+                        {
+                            "name": "simulacrum-scalafix-annotations_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.12/0.5.4/simulacrum-scalafix-annotations_2.12-0.5.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "jawn-parser_2.12",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jawn-parser_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.12/1.1.2/jawn-parser_2.12-1.1.2.jar"
+                        },
+                        {
+                            "name": "jawn-parser_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/jawn-parser_2.12/1.1.2/jawn-parser_2.12-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "geny_2.12",
+                    "version": "0.7.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "geny_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.7.1/geny_2.12-0.7.1.jar"
+                        },
+                        {
+                            "name": "geny_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.12/0.7.1/geny_2.12-0.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "upickle-core_2.12",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "upickle-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.12/2.0.0/upickle-core_2.12-2.0.0.jar"
+                        },
+                        {
+                            "name": "upickle-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.12/2.0.0/upickle-core_2.12-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.nscala-time",
+                    "name": "nscala-time_2.12",
+                    "version": "2.22.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "nscala-time_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0.jar"
+                        },
+                        {
+                            "name": "nscala-time_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.yaml",
+                    "name": "snakeyaml",
+                    "version": "1.26",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "snakeyaml",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar"
+                        },
+                        {
+                            "name": "snakeyaml",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-core_2.12",
+                    "version": "4.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json4s-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/4.0.6/json4s-core_2.12-4.0.6.jar"
+                        },
+                        {
+                            "name": "json4s-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/4.0.6/json4s-core_2.12-4.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-native-core_2.12",
+                    "version": "4.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json4s-native-core_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_2.12/4.0.6/json4s-native-core_2.12-4.0.6.jar"
+                        },
+                        {
+                            "name": "json4s-native-core_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native-core_2.12/4.0.6/json4s-native-core_2.12-4.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.commons",
+                    "name": "commons-lang3",
+                    "version": "3.12.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-lang3",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar"
+                        },
+                        {
+                            "name": "commons-lang3",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "joda-time",
+                    "name": "joda-time",
+                    "version": "2.10.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "joda-time",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar"
+                        },
+                        {
+                            "name": "joda-time",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.joda",
+                    "name": "joda-convert",
+                    "version": "2.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "joda-convert",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0.jar"
+                        },
+                        {
+                            "name": "joda-convert",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-ast_2.12",
+                    "version": "4.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json4s-ast_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/4.0.6/json4s-ast_2.12-4.0.6.jar"
+                        },
+                        {
+                            "name": "json4s-ast_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/4.0.6/json4s-ast_2.12-4.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.json4s",
+                    "name": "json4s-scalap_2.12",
+                    "version": "4.0.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json4s-scalap_2.12",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/4.0.6/json4s-scalap_2.12-4.0.6.jar"
+                        },
+                        {
+                            "name": "json4s-scalap_2.12",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/4.0.6/json4s-scalap_2.12-4.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.thoughtworks.paranamer",
+                    "name": "paranamer",
+                    "version": "2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "paranamer",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
+                        },
+                        {
+                            "name": "paranamer",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.16",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/apple/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.16/scala-library-2.12.16-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}

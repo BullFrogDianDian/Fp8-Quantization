@@ -1,0 +1,4 @@
+[debug] [fp8-quantization-test] Classpath dependencies List()
+[debug] [fp8-quantization-test] Dependencies from configurations List(fp8-quantization)
+[debug] Bloop wrote the configuration of project 'fp8-quantization-test' to '/Users/apple/Desktop/Fp8-Quantization/.bloop/fp8-quantization-test.json'
+[success] Generated .bloop/fp8-quantization-test.json
